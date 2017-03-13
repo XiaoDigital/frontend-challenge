@@ -74,7 +74,7 @@ $button-border-width: 1px;
 }
 
 .button--secondary--small,
-%button--secondary--small{
+%button--secondary--small {
   @extend %button--secondary;
   @extend %button--small;
 }

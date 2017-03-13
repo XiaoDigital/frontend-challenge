@@ -4,88 +4,86 @@
 //
 // Style guide: 7.1
 
-.header{
-	height: 94px;
-	background-color: color(blue-heavy);
+.header {
+  height: 94px;
+  background-color: color(blue-heavy);
 }
 
-.header__logo{
-	float: left;
-	width: 274px;
-	height: 27px;
-	margin: 34px 0px 34px 37px;
-	background: url(logo.svg) no-repeat;
+.header__logo {
+  float: left;
+  width: 274px;
+  height: 27px;
+  margin: 34px 0 34px 37px;
+  background: url('logo.svg') no-repeat;
 }
 
-.header__nav{
-	float: left;
+.header__nav {
+  float: left;
 }
 
-.header__nav-menu{
-	float: left;
-	margin: 0;
-	padding: 0;
+.header__nav-menu {
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 
-.header__nav-menu-item{
-	float: left;
-	margin: 39px 50px;
-	list-style-type: none;
-	cursor: pointer;
+.header__nav-menu-item {
+  float: left;
+  margin: 39px 50px;
+  list-style-type: none;
+  cursor: pointer;
 }
 
-.header__nav-menu-link{
-	color: color(white);
+.header__nav-menu-link {
+  color: color(white);
 }
 
-.header__search{
-	float: right;
-	margin: 22px 19px;
+.header__search {
+  float: right;
+  margin: 22px 19px;
 }
 
-.header__search-button{
-	position: relative;
-	right: 40px;
-	color: transparent;
-	background: url(search.svg) no-repeat;
-	border: none;
-}
-
-
-.content{
-	margin: 0 6%;
-}
-
-.content__headline-text{
-	max-width: 55%;
-	margin: $spacing-l 0;
-	color: color(blue-mid);
-}
-
-.content__row{
-	overflow: hidden;
-}
-
-.content__row-block{
-	float: left;
-	width: 48.4%;
-	margin: 0 0 $spacing-m 0;
+.header__search-button {
+  position: relative;
+  right: 40px;
+  color: transparent;
+  background: url('search.svg') no-repeat;
+  border: 0;
 }
 
 
-.content__row-block:nth-of-type(1){
-	margin: 0 $spacing-m $spacing-m 0;
-
+.content {
+  margin: 0 6%;
 }
 
-.content__row-block-button{
-	margin: 0 $spacing-m/2 $spacing-m/2;
+.content__headline-text {
+  max-width: 58%;
+  margin: $spacing-l 0;
+  color: color(blue);
 }
 
-.approach{
-	width: 64%;	
+.content__row {
+  overflow: hidden;
 }
 
-.contact{
-	width: 33%;
+.content__row-block {
+  float: left;
+  width: 48.4%;
+  margin: 0 0 $spacing-m;
+}
+
+.content__row-block:nth-of-type(1) {
+  margin: 0 $spacing-m $spacing-m 0;
+}
+
+.content__row-block-button {
+  margin: 0 $spacing-m/2 $spacing-m/2;
+}
+
+.approach {
+  width: 64%;
+}
+
+.contact {
+  width: 33%;
 }
