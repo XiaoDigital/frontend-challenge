@@ -9,7 +9,7 @@
     "babel-register": "^6",
     "breakpoint-sass": "^2",
     "browser-sync": "^2",
-    "chroma-sass": "^1",
+    "chroma-sass": "^1.2.6",
     "del": "^2",
     "eslint": "^3",
     "eyeglass": "^1",

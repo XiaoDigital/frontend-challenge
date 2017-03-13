@@ -1,0 +1,80 @@
+// Blocks
+//
+// There are three main styles of block - Primary, Secondary and Hybird. Primary is the
+// default style. 
+//
+// .block--secondary - The secondary block style.
+// .block--hybird - The hybird block style.
+//
+// Markup: block.twig
+//
+// Style guide: 6.2
+
+$chroma: add-colors('primary', (
+    block-primary-bg:                'blue-light',
+    block-primary-border:            'blue-light',
+    block-primary-text:              'blue-heavy',
+
+    block-secondary-bg:              'blue-xlight',
+    block-secondary-border:          'blue-light',
+    block-secondary-text:           'blue-heavy',
+));
+
+$block-padding: spacing(15px);
+$block-border-width: 1px;
+
+.block,
+%block {
+  @include typeface(base);
+  border-width: $block-border-width;
+  border-style: solid;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: color(block-primary-bg);
+  color: color(block-primary-text);
+  border-color: color(block-primary-border);
+
+
+  .block__content, %block__content{
+    margin: 0;
+    padding: 0 $block-padding $block-padding;
+    border: none;
+  }
+
+  .block__title, %block__title{
+    margin: 0;
+    padding: $block-padding;
+    border: none;
+    font-weight: bold;
+  }
+}
+
+
+.block--secondary,
+%block--secondary {
+  background-color: color(block-secondary-bg);
+  color: color(block-secondary-text);
+  border-color: color(block-secondary-border);
+
+}
+
+.block--hybird,
+%block--hybird {
+
+    .block__title, %block__title{
+      background-color: color(block-primary-bg);
+      color: color(block-primary-text);
+      border-color: color(block-primary-border);
+  }
+
+
+    .block__content, %block__content{
+      padding: $block-padding;
+      background-color: color(block-secondary-bg);
+      color: color(block-secondary-text);
+      border-color: color(block-secondary-border);
+
+  }
+}

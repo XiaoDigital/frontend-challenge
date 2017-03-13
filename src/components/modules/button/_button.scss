@@ -5,6 +5,7 @@
 //
 // .button--secondary - The secondary button style.
 // .button--small - A small button.
+// .button--secondary--small - A small secondary button.
 //
 // Markup: button.twig
 //
@@ -70,4 +71,10 @@ $button-border-width: 1px;
 .button--small,
 %button--small {
   height: $button-height-s;
+}
+
+.button--secondary--small,
+%button--secondary--small{
+  @extend %button--secondary;
+  @extend %button--small;
 }
