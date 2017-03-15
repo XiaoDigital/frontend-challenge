@@ -4,11 +4,14 @@
 //
 // Style guide: 7.1
 
+
+//Header 
 .header {
   height: 94px;
   background-color: color(blue-heavy);
 }
 
+//Logo
 .header__logo {
   float: left;
   width: 274px;
@@ -17,6 +20,7 @@
   background: url('logo.svg') no-repeat;
 }
 
+//Menu
 .header__nav {
   float: left;
 }
@@ -38,6 +42,7 @@
   color: color(white);
 }
 
+//Search bar
 .header__search {
   float: right;
   margin: 22px 19px;
@@ -51,7 +56,7 @@
   border: 0;
 }
 
-
+//Content section
 .content {
   margin: 0 6%;
 }
@@ -68,7 +73,7 @@
 
 .content__row-block {
   float: left;
-  width: 48.4%;
+  width: 47.4%;
   margin: 0 0 $spacing-m;
 }
 
@@ -86,4 +91,18 @@
 
 .contact {
   width: 33%;
+}
+
+
+//Media query to adjust block layout
+@include respond-to('tablet') {
+
+	.content__headline-text {
+	  max-width: 100%;
+}
+
+	.content__row-block {
+	  width: 100%;
+}
+
 }

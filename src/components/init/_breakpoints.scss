@@ -27,3 +27,4 @@
 @include add-breakpoint('l', (1024px, 'no-query' true));
 @include add-breakpoint('xl', 1280px);
 @include add-breakpoint('xxl', 1680px);
+@include add-breakpoint('tablet',(768px 1042px, 'no-query' true))
